@@ -92,7 +92,7 @@
 <script type="text/javascript" src="js/bootstrap.js"></script>
 <script>
     window.onload = function() {
-        history.replaceState("", "", "/services.php");
+        history.replaceState("","","/backend/services.php");
     }
 </script>
 </body>
