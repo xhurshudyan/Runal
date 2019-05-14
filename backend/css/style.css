@@ -1,0 +1,51 @@
+/* Admin Navigation */
+#menu-admin {
+    padding: 15px;
+}
+#menu-admin.navbar-default {
+    background-color: #e18484;
+    border-color: rgba(231, 231, 231, 0);
+    box-shadow: 0 0 30px rgba(0,0,0,0.2)
+}
+.navbar-default .navbar-nav > li > a {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: #1f386e;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 8px 2px;
+    border-radius: 0;
+    margin: 9px 20px 0 20px;
+}
+.navbar-default .navbar-nav > li > a:hover {
+    color: #ce2a36;
+}
+/* Admin Section */
+#about {
+    padding: 110px 0;
+    background: #f6f6f6;
+}
+#about h2 {
+    position: relative;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+}
+#about h2::after {
+    position: absolute;
+    content: "";
+    background-color: #e52f3c;
+    height: 3px;
+    width: 50px;
+    bottom: -1px;
+    left: 0;
+}
+/* Admin Footer */
+#footer-admin {
+    background: #f4d3d3;
+    padding: 30px 0;
+}
+#footer-admin p {
+    color: #888;
+    font-size: 14px;
+}
