@@ -592,6 +592,9 @@ label {
     padding: 30px 0;
 }
 @media (max-width: 768px) {
+    #asdf{
+        display: block;
+    }
     #about img {
         margin: 50px 0;
     }
