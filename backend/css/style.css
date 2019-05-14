@@ -592,9 +592,6 @@ label {
     padding: 30px 0;
 }
 
-#footerasdsdasda{
-    display: block;
-}
 @media (max-width: 768px) {
     #about img {
         margin: 50px 0;
