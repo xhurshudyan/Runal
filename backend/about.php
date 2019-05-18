@@ -31,12 +31,12 @@
                 <li><a href="testimonials.php" class="page-scroll">ОТЗЫВЫ</a></li>
                 <li><a href="contact.php" class="page-scroll">КОНТАКТ</a></li>
             </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#" class="page-scroll">ГЛАВНАЯ</a></li>
-                <li><a href="#" class="page-scroll">ВЫХОД</a></li>
-            </ul>
-        </div>
-    </div>
+<ul class="nav navbar-nav navbar-right">
+    <li><a href="#" class="page-scroll">ГЛАВНАЯ</a></li>
+    <li><a href="#" class="page-scroll">ВЫХОД</a></li>
+</ul>
+</div>
+</div>
 </nav>
 <div id="about">
     <div class="container">
@@ -47,6 +47,8 @@
     <div class="container text-center">
         <p>&copy; 2019</p>
     </div>
+
+    
 </div>
 </body>
 </html>
