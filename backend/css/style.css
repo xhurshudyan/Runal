@@ -1,0 +1,117 @@
+/* Admin Navigation*/
+#menu-admin {
+    padding: 15px;
+}
+#menu-admin.navbar-default {
+    background-color: #e18484;
+    border-color: rgba(231, 231, 231, 0);
+    box-shadow: 0 0 30px rgba(0,0,0,0.2)
+}
+.navbar-default .navbar-nav > li > a {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: #1f386e;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 8px 2px;
+    border-radius: 0;
+    margin: 9px 20px 0 20px;
+}
+.navbar-default .navbar-nav > li > a:hover {
+    color: #ce2a36;
+}
+/* Admin services Section */
+#admin-services, .services-list-block {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #e18484;
+    padding: 10px;
+}
+.services-list-block {
+    margin-top: 20px;
+}
+.services-list {
+    background-color: #e18484;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 15px 15px 0;
+}
+.services-list h3 {
+    width: 100%;
+}
+.hidden-list {
+    border: 2px solid #e18484;
+    padding: 10px;
+    display: none;
+}
+.services-list-block h4 {
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+}
+#admin-services h4  {
+    font-weight: 700;
+}
+#customFile, .hidden {
+    display: none;
+}
+.file-update {
+    margin-top: 5px;
+}
+.update-img h4 {
+    text-align: left;
+    margin-left: 25px;
+}
+.custom-file-label {
+    background-color:  #e18484;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 6px;
+    color: white;
+    font-size: 18px;
+}
+.custom-file-label:hover {
+    background-color: #9d5c5c;
+    transition: 700ms;
+}
+
+.file-btn, .file-btn-2, #text-btn, .update-btn, .delete-btn {
+    background-color: #e18484;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 5px;
+    color: white;
+    font-size: 18px;
+    margin-left: 8px;
+}
+.file-btn:hover, #text-btn:hover, .update-btn:hover, .delete-btn:hover {
+    background-color: #9d5c5c;
+    transition: 700ms;
+}
+#insert-title, #insert-content, .update-title, .update-content {
+    border-color: #e18484;
+    resize: none;
+}
+.error__content {
+    color: red;
+    text-align: center;
+}
+.success__content {
+    color: green;
+    text-align: center;
+}
+#myModal {
+    position: fixed;
+    z-index: 2000;
+    left: 40%; top: 30px;
+    display: none;
+}
+/* Admin Footer */
+#footer-admin p {
+    color: #888;
+    font-size: 14px;
+}
+#footer-admin {
+    background: #f4d3d3;
+    padding: 30px 0;
+}
