@@ -515,7 +515,6 @@ label {
     font-size: 12px;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
-    float: left;
 }
 #contact .form-control {
     display: block;
@@ -602,4 +601,152 @@ label {
     #about img {
         margin: 50px 0;
     }
+}
+/*ABOUT CAPTION*/
+.form-control-about{
+    height: 93px;
+    width: 155%;
+}
+#about-row-col{
+    width: 73%;
+}
+.form-control-about-mini{
+    height: 39px;
+    width: 100%;
+}
+#about-row-col-mini{
+    width: 100%;
+}
+#text-btn-mini{
+    background-color: #e18484;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 5px;
+    color: white;
+    font-size: 18px;
+    margin-top: 36px;
+}
+#form-group col-sm-5 mini{
+    margin-left: 32%;
+}
+#insert-title-1{
+    border-color: #e18484;
+    resize: none;
+}
+#insert-title-2{
+    border-color: #e18484;
+    resize: none;
+}
+#insert-title-3{
+    border-color: #e18484;
+    resize: none;
+}
+#insert-title-4{
+    border-color: #e18484;
+    resize: none;
+}
+#insert-title-5{
+    border-color: #e18484;
+    resize: none;
+}
+#insert-title-6{
+    border-color: #e18484;
+    resize: none;
+}
+#insert-title-7{
+    border-color: #e18484;
+    resize: none;
+}
+#insert-title-8{
+    border-color: #e18484;
+    resize: none;
+}
+#insert-title-9{
+    border-color: #e18484;
+    resize: none;
+}
+#file-btn-2{
+    background-color: #e18484;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 5px;
+    color: white;
+    font-size: 18px;
+    margin-left: 8px;
+}
+#file-btn:hover{
+    background-color: #9d5c5c;
+    transition: 700ms;
+}
+#about-row-col-1{
+    margin-left: 23%;
+}
+#label{
+    margin-top: 12px;
+    margin-left: 95px;
+}
+#one{
+    display: inline;
+    font-size: 10px;
+}
+#two{
+    display: inline;
+    padding-left: 51px;
+    font-size: 10px;
+}
+@media screen and (max-width: 770px) {
+#insert-title-1{
+    margin-left: -36%;
+    width: 141%;
+}
+
+    }
+
+
+
+input[type="checkbox"].ios8-switch {
+    position: absolute;
+    margin: 8px 0 0 16px;
+}
+input[type="checkbox"].ios8-switch + label {
+    position: relative;
+    padding: 5px 0 0 50px;
+    line-height: 2.0em;
+}
+input[type="checkbox"].ios8-switch + label:before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 40px; /* x*5 */
+    height: 24px; /* x*3 */
+    border-radius: 16px; /* x*2 */
+    background: aqua;
+    border: 1px solid #d9d9d9;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+input[type="checkbox"].ios8-switch + label:after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0px;
+    top: 0px;
+    width: 24px; /* x*3 */
+    height: 24px; /* x*3 */
+    border-radius: 16px; /* x*2 */
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+input[type="checkbox"].ios8-switch + label:hover:after {
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+input[type="checkbox"].ios8-switch:checked + label:after {
+    margin-left: 16px;
+}
+input[type="checkbox"].ios8-switch:checked + label:before {
+    background: #55D069;
 }
