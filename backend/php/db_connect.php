@@ -49,7 +49,7 @@ if ($conn->query($query) != TRUE) {
 
 $query = "CREATE TABLE IF NOT EXISTS testimonials (
                id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-               content VARCHAR (100) NOT NULL,
+               content VARCHAR (250) NOT NULL,
                authors VARCHAR (20) NOT NULL,
                create_date VARCHAR (25)  NOT NULL
 )";

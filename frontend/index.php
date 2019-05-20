@@ -221,63 +221,56 @@
     <div class="section-title">
       <h2>Отзывы</h2>
     </div>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="testimonial">
-          <div class="testimonial-image"> <img src="img/testimonials/01.jpg" alt=""> </div>
-          <div class="testimonial-content">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."</p>
-            <div class="testimonial-meta"> - John Doe </div>
-          </div>
+      <div class="row">
+          <?php
+          include "../backend/php/db_connect.php";
+          $query= "SELECT * FROM `testimonials` ";
+          $result = mysqli_query($conn, $query);
+          if(mysqli_num_rows($result) > 0){
+              while($row = mysqli_fetch_array($result))
+              {
+                  $style = "";
+                  $counts = 0;
+                  $directory = "img/testimonials/";
+                  $images = glob($directory . "/{$row['id']}.jpg");
+                  $query = mysqli_query($conn, "SELECT COUNT(*) as total_count FROM `testimonials`");
+                  $count = mysqli_fetch_array($query)['total_count'];
+                  if ($count == 1){
+                      $style = "margin-left: 17%";
+                  }
+                  if ($count == 2){
+                      $counts = 6;
+                  }
+                  if ($count == 3){
+                      $counts = 4;
+                  }
+                  if ($count == 4){
+                      $counts = 6;
+                  }
+                  if ($count == 5){
+                      $counts = 10;
+                      $style = "margin-left: 17%";
+                  }if ($count == 6){
+                  $counts = 12;
+                  $style = "margin-left: 17%";
+              }
+                  foreach($images as $image) {
+                      $datalist = "
+    <div style='$style' class='col-md-".$counts."'>
+            <div class='testimonial'>
+                <div class='testimonial-image'> <img src='{$image}' alt='{$row['authors']}'> </div>
+                <div class='testimonial-content'>
+                    <p>{$row['content']}</p>
+                    <div class='testimonial-meta'>{$row['authors']}</div>
+                </div>
+            </div>
         </div>
+";echo $datalist;
+                  }
+              }
+          }
+          ?>
       </div>
-      <div class="col-md-4">
-        <div class="testimonial">
-          <div class="testimonial-image"> <img src="img/testimonials/02.jpg" alt=""> </div>
-          <div class="testimonial-content">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis."</p>
-            <div class="testimonial-meta"> - Johnathan Doe </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="testimonial">
-          <div class="testimonial-image"> <img src="img/testimonials/03.jpg" alt=""> </div>
-          <div class="testimonial-content">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."</p>
-            <div class="testimonial-meta"> - John Doe </div>
-          </div>
-        </div>
-      </div>
-      <div class="row"> </div>
-      <div class="col-md-4">
-        <div class="testimonial">
-          <div class="testimonial-image"> <img src="img/testimonials/04.jpg" alt=""> </div>
-          <div class="testimonial-content">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."</p>
-            <div class="testimonial-meta"> - Johnathan Doe </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="testimonial">
-          <div class="testimonial-image"> <img src="img/testimonials/05.jpg" alt=""> </div>
-          <div class="testimonial-content">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at."</p>
-            <div class="testimonial-meta"> - John Doe </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="testimonial">
-          <div class="testimonial-image"> <img src="img/testimonials/06.jpg" alt=""> </div>
-          <div class="testimonial-content">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis."</p>
-            <div class="testimonial-meta"> - Johnathan Doe </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </div>
 <!-- Contact Section -->
